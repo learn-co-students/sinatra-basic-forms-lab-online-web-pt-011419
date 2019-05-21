@@ -1,3 +1,4 @@
+
 class Puppy
   attr_accessor :name, :breed, :age
 
@@ -5,6 +6,14 @@ class Puppy
     @name = name
     @breed = breed
     @age = age
+  end
+
+  def months_old
+    self.age * 12
+  end
+
+  def months_old=(age)
+    @age = age * 12
   end
 
 end
